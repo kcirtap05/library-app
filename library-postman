@@ -1,0 +1,1319 @@
+{
+	"info": {
+		"_postman_id": "8429f88a-4b41-46ae-b89c-fa75c9acbac4",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15439126",
+		"_collection_link": "https://martian-robot-96997.postman.co/workspace/Project~363c89d2-ea83-4f57-9f95-eb3296c98145/collection/15439126-8429f88a-4b41-46ae-b89c-fa75c9acbac4?action=share&source=collection_link&creator=15439126"
+	},
+	"item": [
+		{
+			"name": "Library",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/libraries",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"libraries"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/libraries",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"libraries"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:05:17 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:05:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"toronto\",\n    \"location\": \"canada\",\n    \"updated_at\": \"2024-03-13T09:05:17.000000Z\",\n    \"created_at\": \"2024-03-13T09:05:17.000000Z\",\n    \"id\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canadas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/libraries/3",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"libraries",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canadas\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/libraries/3",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"libraries",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:14:24 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:14:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"toronto\",\n    \"location\": \"canadas\",\n    \"status\": null,\n    \"deleted_at\": null,\n    \"created_at\": \"2024-03-13T09:13:47.000000Z\",\n    \"updated_at\": \"2024-03-13T09:14:24.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/libraries",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"libraries"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/libraries",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"libraries"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:16:21 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:16:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"manila\",\n            \"location\": \"philippines\",\n            \"status\": null,\n            \"deleted_at\": null,\n            \"created_at\": \"2024-03-13T09:04:52.000000Z\",\n            \"updated_at\": \"2024-03-13T09:04:52.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"toronto\",\n            \"location\": \"canada\",\n            \"status\": null,\n            \"deleted_at\": null,\n            \"created_at\": \"2024-03-13T09:05:17.000000Z\",\n            \"updated_at\": \"2024-03-13T09:05:17.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"toronto\",\n            \"location\": \"canadas\",\n            \"status\": null,\n            \"deleted_at\": null,\n            \"created_at\": \"2024-03-13T09:13:47.000000Z\",\n            \"updated_at\": \"2024-03-13T09:14:24.000000Z\"\n        }\n    ],\n    \"first_page_url\": \"http://127.0.0.1:8000/api/libraries?page=1\",\n    \"from\": 1,\n    \"next_page_url\": null,\n    \"path\": \"http://127.0.0.1:8000/api/libraries\",\n    \"per_page\": 15,\n    \"prev_page_url\": null,\n    \"to\": 3\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/libraries/2",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"libraries",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/libraries/2",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"libraries",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:17:11 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:17:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"toronto\",\n    \"location\": \"canada\",\n    \"status\": null,\n    \"deleted_at\": null,\n    \"created_at\": \"2024-03-13T09:05:17.000000Z\",\n    \"updated_at\": \"2024-03-13T09:05:17.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/libraries/3",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"libraries",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/libraries/3",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"libraries",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:24:16 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:24:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"toronto\",\n    \"location\": \"canadas\",\n    \"status\": null,\n    \"deleted_at\": \"2024-03-13T09:24:16.000000Z\",\n    \"created_at\": \"2024-03-13T09:13:47.000000Z\",\n    \"updated_at\": \"2024-03-13T09:24:16.000000Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"book 5\",\r\n    \"author\": \"test 5\",\r\n    \"library_id\": 2,\r\n    \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/books",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"book 5\",\r\n    \"author\": \"test 5\",\r\n    \"library_id\": 2,\r\n    \"status\": \"available\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/books",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:30:07 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:30:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"book 5\",\n    \"author\": \"test 5\",\n    \"library_id\": 2,\n    \"status\": \"available\",\n    \"updated_at\": \"2024-03-13T09:30:07.000000Z\",\n    \"created_at\": \"2024-03-13T09:30:07.000000Z\",\n    \"id\": 5\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"title\": \"book 5\",\r\n    \"author\": \"test 5\",\r\n    \"library_id\": 2,\r\n    \"status\": \"borrowed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/books/5",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"books",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"title\": \"book 5\",\r\n    \"author\": \"test 5\",\r\n    \"library_id\": 2,\r\n    \"status\": \"borrowed\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/books/5",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"books",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:30:44 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:30:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"library_id\": 2,\n    \"title\": \"book 5\",\n    \"author\": \"test 5\",\n    \"status\": \"borrowed\",\n    \"deleted_at\": null,\n    \"created_at\": \"2024-03-13T09:30:07.000000Z\",\n    \"updated_at\": \"2024-03-13T09:30:44.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/books",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/books",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:31:02 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:31:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"library_id\": 1,\n            \"title\": \"book 1\",\n            \"author\": \"patrick\",\n            \"status\": \"available\",\n            \"deleted_at\": null,\n            \"created_at\": \"2024-03-13T09:29:23.000000Z\",\n            \"updated_at\": \"2024-03-13T09:29:23.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"library_id\": 1,\n            \"title\": \"book 2\",\n            \"author\": \"test 2\",\n            \"status\": \"available\",\n            \"deleted_at\": null,\n            \"created_at\": \"2024-03-13T09:29:33.000000Z\",\n            \"updated_at\": \"2024-03-13T09:29:33.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"library_id\": 1,\n            \"title\": \"book 3\",\n            \"author\": \"test 3\",\n            \"status\": \"available\",\n            \"deleted_at\": null,\n            \"created_at\": \"2024-03-13T09:29:42.000000Z\",\n            \"updated_at\": \"2024-03-13T09:29:42.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"library_id\": 2,\n            \"title\": \"book 4\",\n            \"author\": \"test 4\",\n            \"status\": \"available\",\n            \"deleted_at\": null,\n            \"created_at\": \"2024-03-13T09:29:52.000000Z\",\n            \"updated_at\": \"2024-03-13T09:29:52.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"library_id\": 2,\n            \"title\": \"book 5\",\n            \"author\": \"test 5\",\n            \"status\": \"borrowed\",\n            \"deleted_at\": null,\n            \"created_at\": \"2024-03-13T09:30:07.000000Z\",\n            \"updated_at\": \"2024-03-13T09:30:44.000000Z\"\n        }\n    ],\n    \"first_page_url\": \"http://127.0.0.1:8000/api/books?page=1\",\n    \"from\": 1,\n    \"next_page_url\": null,\n    \"path\": \"http://127.0.0.1:8000/api/books\",\n    \"per_page\": 15,\n    \"prev_page_url\": null,\n    \"to\": 5\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/books/5",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"books",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/books/5",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"books",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:31:15 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:31:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"library_id\": 2,\n    \"title\": \"book 5\",\n    \"author\": \"test 5\",\n    \"status\": \"borrowed\",\n    \"deleted_at\": null,\n    \"created_at\": \"2024-03-13T09:30:07.000000Z\",\n    \"updated_at\": \"2024-03-13T09:30:44.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/books/5",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"books",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"toronto\",\r\n    \"location\": \"canada\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/books/5",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"books",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:31:15 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:31:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"library_id\": 2,\n    \"title\": \"book 5\",\n    \"author\": \"test 5\",\n    \"status\": \"borrowed\",\n    \"deleted_at\": null,\n    \"created_at\": \"2024-03-13T09:30:07.000000Z\",\n    \"updated_at\": \"2024-03-13T09:30:44.000000Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tracking",
+			"item": [
+				{
+					"name": "Create Borrow Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"library_id\": 2,\r\n    \"book_id\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/trackings",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"trackings"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"book 5\",\r\n    \"author\": \"test 5\",\r\n    \"library_id\": 2,\r\n    \"status\": \"available\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/books",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:30:07 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Mar 2024 09:30:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.19"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"book 5\",\n    \"author\": \"test 5\",\n    \"library_id\": 2,\n    \"status\": \"available\",\n    \"updated_at\": \"2024-03-13T09:30:07.000000Z\",\n    \"created_at\": \"2024-03-13T09:30:07.000000Z\",\n    \"id\": 5\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"patricks\",\r\n    \"email\": \"patrick@test.com.ph\",\r\n    \"password\": \"patrick\",\r\n    \"library_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/register-user",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"register-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody)\r",
+									"var access_token = jsonData.access_token;\r",
+									"pm.environment.set(\"token\", access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"patricks\",\r\n    \"email\": \"patrick@test.com.ph\",\r\n    \"password\": \"patrick\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/login",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
